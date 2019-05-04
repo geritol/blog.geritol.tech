@@ -1,14 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Geri's Notes`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Gergo Tolnai`,
+      summary: `who lives and works in Budapest building useful things.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://blog.geritol.tech/`,
     social: {
-      twitter: `kylemathews`,
+      github: `https://github.com/geritol`,
+      linkedin: `https://www.linkedin.com/in/gergo-tolnai/`,
+      codewars: `https://www.codewars.com/users/geritol`,
+      ossu: `https://www.geritol.tech/ossu/`,
     },
   },
   plugins: [
