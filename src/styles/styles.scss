@@ -5,3 +5,13 @@
 @import "node_modules/bootstrap/scss/images";
 
 @import "./comment";
+
+a.social {
+  background-color: rgba(251, 251, 123, 0.58);
+  transition-duration: 0.5s;
+}
+
+a.social:hover {
+  text-decoration: underline;
+  background-color: rgba(251, 251, 123, 0.88);
+}

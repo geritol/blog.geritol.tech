@@ -145,7 +145,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         theme_color: `#007acc`,
         display: `minimal-ui`,
-        icon: `content/assets/icon.svg`,
+        icon: `src/images/icon.svg`,
       },
     },
     `gatsby-plugin-react-helmet`,
