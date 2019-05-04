@@ -1,21 +1,19 @@
 ---
 title: Hello World
-date: "2015-05-01T22:12:03.284Z"
+date: "2019-05-04T22:12:03.284Z"
 ---
 
-This is my first post on my new fake blog! How exciting!
+Starting a blog was on my list of things to do for a long time. For years there where challenges
+that I faced that I did regret later not documenting, because the solutions I figured out are now
+hard or impossible to retrieve.
 
-I'm sure I'll write a lot more interesting things in the future.
+Some new technologies, things that I have learnt recently, some good blogs[^1], and Mark Christian's
+recent post ([You should have a personal web site](https://writing.markchristian.org/2019/04/29/personal-web-sites/))
+motivated me to start this blog (I've had a personal [website](https://www.geritol.tech) for some time now, but no blog recently).
 
-Oh, and here's a great quote from this Wikipedia on
-[salted duck eggs](http://en.wikipedia.org/wiki/Salted_duck_egg).
+## What to expect
 
-> A salted duck egg is a Chinese preserved food product made by soaking duck
-> eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-> supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-> charcoal paste. The eggs may also be sold with the salted paste removed,
-> wrapped in plastic, and vacuum packed. From the salt curing process, the
-> salted duck eggs have a briny aroma, a gelatin-like egg white and a
-> firm-textured, round yolk that is bright orange-red in color.
+Most probably will write some how-tos about software engineering related stuff.
+Also I will probably write on some of my projects and ideas.
 
-![Chinese Salty Egg](./salty_egg.jpg)
+[^1]: Like [Jessie Frazelle's](https://blog.jessfraz.com) and [Yegor Bugayenko's](https://www.yegor256.com/) blog.
