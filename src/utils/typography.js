@@ -6,6 +6,14 @@ Wordpress2016.overrideThemeStyles = () => {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },
+    "a.social": {
+      backgroundColor: "rgba(251, 251, 123, 0.58)",
+      transitionDuration: ".5s",
+    },
+    "a.social:hover": {
+      textDecoration: `underline`,
+      backgroundColor: "rgba(251, 251, 123, 0.88)",
+    },
   }
 }
 

@@ -1,11 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
+    title: `Geri's Notes`,
+    author: `Gergo Tolnai`,
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://blog.geritol.tech/`,
     social: {
-      twitter: `kylemathews`,
+      github: `https://github.com/geritol`,
+      linkedin: `https://www.linkedin.com/in/gergo-tolnai/`,
+      codewars: `https://www.codewars.com/users/geritol`,
+      ossu: `https://www.geritol.tech/ossu/`,
     },
   },
   plugins: [
