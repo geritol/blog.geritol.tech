@@ -2,6 +2,7 @@
 title: How To Setup A Simple Blog (like this one)
 date: "2019-05-09T22:40:32.169Z"
 description: Setting up a blog nowadays is quite easy. You do not have to mess with setting up a WordPress site or any other conventional blog engine that require databases and dynamic hosting. Create a static generated blog in 5 minutes.
+issue: 1
 ---
 
 Setting up a blog nowadays is quite easy. You do not have to mess with setting up
