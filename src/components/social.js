@@ -7,7 +7,7 @@ export const Social = props => {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      class="social"
+      className="social"
       style={{
         display: "inline-block",
         padding: "0 5px 0 5px",
