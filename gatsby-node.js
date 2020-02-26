@@ -8,6 +8,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
 
   // Get all markdown blog posts sorted by date
+  const blogPostWithComment = path.resolve(
+    `./src/templates/blog-post-with-comment.js`
+  )
+
   const result = await graphql(
     `
       {
@@ -19,6 +23,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             id
             fields {
               slug
+            }
+            frontmatter {
+              title
+              issue
             }
           }
         }
@@ -44,6 +52,20 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     posts.forEach((post, index) => {
       const previousPostId = index === 0 ? null : posts[index - 1].id
       const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
+
+      if (post.frontmatter.issue) {
+        createPage({
+          path: post.fields.slug,
+          component: blogPostWithComment,
+          context: {
+            id: post.id,
+            issueId: post.frontmatter.issue,
+            previousPostId,
+            nextPostId,
+          },
+        })
+        return
+      }
 
       createPage({
         path: post.fields.slug,
@@ -106,6 +128,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       title: String
       description: String
       date: Date @dateformat
+      issue: Int
     }
 
     type Fields {

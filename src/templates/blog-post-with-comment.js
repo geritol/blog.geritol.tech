@@ -2,13 +2,14 @@ import React from "react"
 import { graphql } from "gatsby"
 import BlogPostTemplate from "../components/blog-post"
 
-const BlogPost = props => <BlogPostTemplate {...props} />
+const BlogPostWithComment = props => <BlogPostTemplate {...props} />
 
-export default BlogPost
+export default BlogPostWithComment
 
 export const pageQuery = graphql`
-  query BlogPostBySlug(
+  query BlogPostWithComment(
     $id: String!
+    $issueId: Int!
     $previousPostId: String
     $nextPostId: String
   ) {
@@ -41,6 +42,28 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
+      }
+    }
+    github {
+      repository(name: "blog.geritol.tech", owner: "geritol") {
+        issue(number: $issueId) {
+          id
+          comments(first: 30) {
+            nodes {
+              id
+              author {
+                login
+                url
+                avatarUrl
+              }
+              bodyHTML
+              createdAt
+              reactionGroups {
+                content
+              }
+            }
+          }
+        }
       }
     }
   }
