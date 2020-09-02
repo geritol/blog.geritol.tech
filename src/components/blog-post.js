@@ -39,9 +39,25 @@ const BlogPostTemplate = ({ data, location }) => {
         </footer>
       </article>
 
-      <Comments comments={comments} />
-
       <nav className="blog-post-nav">
+        {data.github ? (
+          <a
+            href={data.github.repository.issue.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              marginBottom: `24px`,
+              display: `inline-block`,
+            }}
+          >
+            Join the conversation on Github!{" "}
+          </a>
+        ) : (
+          <></>
+        )}
+
+        <Comments comments={comments} />
+
         <ul
           style={{
             display: `flex`,
