@@ -9,7 +9,7 @@ module.exports = {
     title: `Geri's Notes`,
     author: {
       name: `Gergo Tolnai`,
-      summary: `who lives and works in Budapest building useful things.`,
+      summary: `who lives and works in Budapest`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://blog.geritol.tech/`,
