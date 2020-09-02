@@ -40,7 +40,7 @@ function Bio() {
             />
             <p>
               Written by <strong>{author}</strong> who lives and works in
-              Budapest building useful things.{" "}
+              Budapest.{" "}
               {Object.keys(social).map(site => (
                 <Social site={site} url={social[site]} />
               ))}
