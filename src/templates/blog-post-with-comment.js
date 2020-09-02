@@ -28,6 +28,7 @@ export const pageQuery = graphql`
       repository(name: "blog.geritol.tech", owner: "geritol") {
         issue(number: $issueId) {
           id
+          url
           comments(first: 30) {
             nodes {
               id

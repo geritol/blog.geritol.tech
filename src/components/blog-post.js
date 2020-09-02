@@ -42,6 +42,22 @@ class BlogPostTemplate extends React.Component {
 
         <Comments comments={comments} />
 
+        {this.props.data.github ? (
+          <a
+            href={this.props.data.github.repository.issue.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              marginBottom: `24px`,
+              display: `inline-block`,
+            }}
+          >
+            Join the conversation on Github!{" "}
+          </a>
+        ) : (
+          <></>
+        )}
+
         <ul
           style={{
             display: `flex`,
