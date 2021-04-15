@@ -1,6 +1,6 @@
 import React from "react"
 
-export const Social = props => {
+export const Social = (props) => {
   const { site, url } = props
   return (
     <a
