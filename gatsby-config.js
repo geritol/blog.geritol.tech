@@ -11,7 +11,7 @@ module.exports = {
       name: `Gergo Tolnai`,
       summary: `who lives and works in Budapest`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Notes about software development`,
     siteUrl: `https://blog.geritol.tech/`,
     social: {
       github: `https://github.com/geritol`,
@@ -143,7 +143,7 @@ module.exports = {
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
+        theme_color: `#007acc`,
         display: `minimal-ui`,
         icon: `content/assets/icon.svg`,
       },
