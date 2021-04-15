@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: `Geri's Notes`,
     author: `Gergo Tolnai`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Notes about software development`,
     siteUrl: `https://blog.geritol.tech/`,
     social: {
       github: `https://github.com/geritol`,
@@ -85,7 +85,7 @@ module.exports = {
         short_name: `Geri's Notes`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#007acc`,
         display: `minimal-ui`,
         icon: `content/assets/icon.svg`,
       },
