@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import BlogPostTemplate from "../components/blog-post"
 
-const BlogPost = (props) => <BlogPostTemplate {...props} />
+const BlogPost = props => <BlogPostTemplate {...props} />
 
 export default BlogPost
 
